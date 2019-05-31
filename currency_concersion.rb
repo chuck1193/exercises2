@@ -9,6 +9,6 @@ def currency_conversion
 
   amount_to = (amount_from * rate_to) 
 
-  puts "You have #{amount_from} euros and the exchange rate is #{exchange_rate} so you will recieve #{amount_to} back."
+  puts "You have #{amount_from.round(2)} euros and the exchange rate is #{exchange_rate.round(2)} so you will recieve #{amount_to.round(2)} back."
 end
 currency_conversion
