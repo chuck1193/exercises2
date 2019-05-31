@@ -16,7 +16,7 @@ def paint_calculator
     area_circle = 3.14 * (radius**2)
     gallons2 = area_circle / 350
     if length == 0 
-      puts "You eitheer didn't input a number or put in zero and need to input a number higher than zero and now we need to start over. Thanks!"
+      puts "You either didn't input a number or put in zero and need to input a number higher than zero and now we need to start over. Thanks!"
       paint_calculator
     end
     if gallons2 < 1
