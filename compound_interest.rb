@@ -2,7 +2,7 @@ def compound_interest
   puts "What is the principal amount? "
   principal = gets.chomp.to_f
 
-  puts "What is the rate? "
+  puts "What is the rate? please enter a whole number.(2 or 2.3) "
   rate_of_interest = gets.chomp.to_f
 
   puts "What is the number of years? "
