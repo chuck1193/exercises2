@@ -4,12 +4,20 @@ def bmi_calculator
   puts "What is your current weight? "
   weight = gets.chomp.to_f
 
-  puts "What is your current height(in inches? "
-  height = gets.chomp.to_f
+  puts "What is your current height(in feet)? "
+  feet = gets.chomp.to_f
+
+  puts "What is your current height (in inches)?"
+  inches = gets.chomp.to_f
+
+  feet_in_inches = feet * 12
+  height = feet_in_inches + inches
 
   bmi = (weight / (height * height)) * 703
 
-  if bmi > 18.5 && bmi < 25 
+  if bmi < 18.5
+    puts "You are underweight. Please go see your doctor."
+  elsif bmi > 18.5 && bmi < 25 
     puts "Now that I have calculated you BMI lets see..."
     puts "Your BMI is #{bmi.round(2)}."
     puts "You are within the ideal weight range."
