@@ -28,7 +28,7 @@ def password_validation
     password = STDIN.noecho(&:gets).chomp
 
     username_dictionary.each do | username, password |
-      if username = username_dictionary[username] && password == username_dictionary[password]
+      if username == username_dictionary[username] && password == username_dictionary[password]
         puts "Welcome!"
       else
         puts "Who are you? Start Over!"
