@@ -5,7 +5,7 @@ def multistate_sales_tax
   puts "What state do you live in?"
   state = gets.chomp.downcase
   
-  if state == "wisconsin" || state =~ ["wisconsin"]
+  if state == "wisconsin" || state =~ ["wisconsin"] || state == "wi"
     puts "Which county are you in?"
     county = gets.chomp.downcase
     if county == "eau claire" || county =~ ["eau claire"]
@@ -19,7 +19,7 @@ def multistate_sales_tax
     else
       puts "You total is #{order_amount}."
     end
-  elsif state == "illinois" || state =~ ["illinois"]
+  elsif state == "illinois" || state =~ ["illinois"] || state == "il"
     sales_tax = order_amount * 0.08
     end_amount = order_amount + sales_tax
     puts "You total comes out to #{end_amount} with sales tax include."
