@@ -7,7 +7,7 @@ def bmi_calculator
   puts "What is your current height(in feet)? "
   feet = gets.chomp.to_f
 
-  puts "What is your current height (in inches)?"
+  puts "What is your current height(in inches)?"
   inches = gets.chomp.to_f
 
   feet_in_inches = feet * 12
