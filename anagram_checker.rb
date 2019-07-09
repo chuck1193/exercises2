@@ -1,8 +1,7 @@
 def is_anagram
   array = []
   i = 0
-  n = 0
-  k = 0
+
 
   puts "Enter strings and I'll tell you if they are anagrams: "
   puts "Enter the first string: "
@@ -26,10 +25,13 @@ def is_anagram
     word = words_hash.values
   
     word.each do |word|
-      if word == " "
-        word_arr = word.reject {|value| value.to_s == " "}
+      if word[i][i] == " "
+        word[i][i].slice(word)
        end
+       i += 1
     end
+
+    p word
 
     word1 = word[0].join
     word2 = word[1].join
@@ -41,11 +43,8 @@ def is_anagram
       puts "These two words are not anagrams."
     end 
 
+
   end
-
-
-
-
 
 
 end
