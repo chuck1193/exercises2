@@ -17,7 +17,7 @@ def password_generator
   subtracted_num = num_characters + numbers
   let_loop = min_length - subtracted_num
 
-  (let_loop + 1).times do
+  (let_loop).times do
     rand_letter = rand(letters.length)
     password_array << letters[rand_letter]
   end
@@ -29,8 +29,16 @@ def password_generator
     rand_num = rand(numberr.length)
     password_array << numberr[rand_num]
   end 
+  password_array.each do |lett|
+    if lett == 'a' || lett == 'e' || lett == 'i' || lett == 'o' || lett == 'u'
+      num = rand(numberr.length)
+      lett = lett[num]
+      p num
+    end
+  end
   password = password_array.shuffle.join
   puts password
+
 end
 
 password_generator
