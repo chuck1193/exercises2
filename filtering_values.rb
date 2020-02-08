@@ -11,7 +11,7 @@ def filtering_values
       end
     end
   end
-  p even_number_arr
+  puts even_number_arr
   # p even_number_arr
   # number_list.each do |number|
   #   if  number % 2 == 0
